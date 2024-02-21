@@ -21,12 +21,31 @@
         .btnPrev {
           margin-left: -85px;
         }
+        .btnNext1 {
+          margin-right: -52px;
+        }
+        .btnPrev1 {
+          margin-left: -52px;
+        }
+
         .image-container {
           position: relative;
         }
 
         .image-container img {
           object-fit: cover;
+        }
+
+        .img-footer {
+          margin-top: 0px;
+        }
+        .img1-footer {
+          margin-top: 0px;
+          margin-left: 520px;
+        }
+        .row-footer {
+          margin-top: -160px;
+          margin-left: -165px;
         }
 
         .caption {
@@ -104,6 +123,60 @@
         .paragrafArtikel2 {
           margin-right: 10px;
         }
+
+        .form-area {
+          padding-top: 0%;
+        }
+        .row.single-form {
+          box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+        }
+        .left {
+          padding: 165px 98px;
+        }
+        .left h2 {
+          font-family: poppins;
+          color: #fff;
+          font-weight: 700;
+          font-size: 48px;
+        }
+        .left h2 span {
+          font-weight: 100;
+        }
+        .single-form{
+            background: #fff;
+        }
+        .right {
+          padding: 70px 100px;
+          position: relative;
+        }
+        .right i {
+          position: absolute;
+          font-size: 80px;
+          left: -27px;
+          top: 40%;
+          color: #fff;
+        }
+        .form-control {
+          border: 2px solid #000;
+        }
+        .right button {
+          border: none;
+          border-radius: 0;
+          background: #252525;
+          width: 180px;
+          color: #fff;
+          padding: 15px 0;
+          display: inline-block;
+          font-size: 16px;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+        .right button:hover{
+            background-color: #252525;
+        }
+        .btnIndikator {
+          margin-top: 50px;
+        }
         @media screen and (max-width: 768px) {
             nav {
                 background-color: rgb(33, 37, 41);
@@ -118,29 +191,74 @@
               justify-content: center;
               text-align: center;
             }
-            .judulDestinasi {
-          margin-left: 10px;
-        }
-            .btnNext {
-          margin-right: 0;
-        }
-        .btnPrev {
-          margin-left: 0;
-        }
-        .colArtikel1 {
-          margin-bottom: 20px;
+           .judulDestinasi {
+              margin-left: 10px;
+            }
+                .btnNext {
+              margin-right: 0;
+            }
+            .btnPrev {
+              margin-left: 0;
+            }
+            .btnNext1 {
+              margin-right: 0;
+            }
+            .btnPrev1 {
+              margin-left: 0;
+            }
+            .colArtikel1 {
+              margin-bottom: 20px;
+            }
+            .colArtikel2 {
+              margin-bottom: 20px;
+            }
+            .colArtikel3 {
+              margin-bottom: 20px;
+            }
+            .container2{
+              margin-top: -40px;
+            }
+            .img-footer{
+              display: none;
+            }
+            .img1-footer{
+              display: none;
+            }
+            .row-footer {
+              margin-top: 0;
+              margin-left: 0;
+            }
+          .left {
+              padding: 90px 15px;
+              text-align: center;
+            }
+          .left h2 {
+            font-size: 25px;
+          }
+          .right {
+            padding: 25px;
+          }
+          .right i {
+            top: -52px;
+            transform: rotate(90deg);
+            left: 46%;
+          }
+              .right button {
+            width: 150px;
+            padding: 12px 0;
+          }
         }
 
-        .colArtikel2 {
-          margin-bottom: 20px;
+        /*responsive form*/
+
+        @media (min-width:768px) and (max-width:991px){
+            .right i {
+              top: -52px;
+              transform: rotate(90deg);
+              left: 50%;
+            }
         }
-        .colArtikel3 {
-          margin-bottom: 20px;
-        }
-        .container2{
-          margin-top: -40px;
-        }
-        }
+
     </style>
 </head>
   <body>
@@ -400,7 +518,7 @@
             <div class="card-bodyArtikel">
               <h3 class="paragrafArtikel1">Judul</h3>
               <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+              <p class="paragrafArtikel2 text-end">21/02/2024</p>
             </div>
             </div>
             </div>
@@ -412,7 +530,7 @@
               <div class="card-bodyArtikel">
                  <h3 class="paragrafArtikel1">Judul</h3>
               <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+              <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -424,7 +542,7 @@
               <div class="card-bodyArtikel">
                  <h3 class="paragrafArtikel1">Judul</h3>
               <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+              <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -440,7 +558,7 @@
               <div class="card-bodyArtikel">
                  <h3 class="paragrafArtikel1">Judul</h3>
               <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+              <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -451,8 +569,8 @@
               <img src="assets/img/bgHome.jpg" class="imgArtikel card-img-top" alt="...">
               <div class="card-bodyArtikel">
                  <h3 class="paragrafArtikel1">Judul</h3>
-              <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+              <p class="paragrafArtikel1">Deskripsi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum inventore repudiandae dolorem!</p>
+              <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -464,7 +582,7 @@
               <div class="card-bodyArtikel">
                  <h3 class="paragrafArtikel1">Judul</h3>
               <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+              <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -473,6 +591,77 @@
     </div>
     <h6 class="judulHome mb-4 text-xl-center justify-content-center mt-5">Lihat Selengkapnya ...</h6>
   </div>  
+   <!--Riview User-->
+   <div class="form-area bg-light pb-5 pt-5">
+    <div class="container">
+      <h1 class="judulDestinasi mb-5 justify-content-center"><b> | </b>Write a Review</h1>
+        <div class="row single-form g-0">
+            <div class="col-sm-12 col-lg-6">
+                <div class="left">
+                  <div id="carouselIndicators" class="carousel slide">
+                    <div class="btnIndikator carousel-indicators bg-dark bg-opacity-75 rounded">
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/img/samplekomen.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/samplekomen.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/samplekomen.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="btnPrev1 carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btnNext1 carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="right">
+                   <i class="fa fa-caret-left"></i>
+                    <form>
+                      <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputPassword1" class="form-label">Message</label>
+                          <textarea type="password" class="form-control" id="InputPassword1"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <!--Footer--> 
+   <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <img src="assets/img/goti.png" alt="GOTI" height="150" class="img-footer" />
+      <img src="assets/img/userIMG.png" alt="NIN2024" height="150" class="img1-footer" />
+      <div class="row-footer row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning text-start">Go On a Trip to Indonesia</h5>
+        <p class="text-start">Goti adalah suatu platform Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit iusto reprehenderit assumenda.</p>
+      </div>
+      </div>
+    </div>
+   </footer>
   <!--Script-->
     <script type="text/javascript">
         var nav = document.querySelector('nav');
