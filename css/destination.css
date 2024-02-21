@@ -1,11 +1,14 @@
-/* Image Jumbotron */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
 .bg-image {
     background-image: url('../assets/img/destination/destination1.jpg');
     background-repeat: no-repeat;
     background-size: 1440px;
     height: 630px;
     align-items: center;
-    filter: drop-shadow(0px 25px 10px grey);
+    /* filter: drop-shadow(0px 25px 10px #00000094); */
 }
 
 .destination {
@@ -13,10 +16,17 @@
     background-position: center center;
     background-size: auto;
     background-repeat: no-repeat;
-    height: 2061px;
+    /* height: 2061px; */
 }
-
 .destination .img-card img {
     width: 450px;
     height: 220px;
+}
+.row .col-4 .img-card img {
+    width: 350px;
+    height: 200px;
+}
+.container .more-article a{
+    text-decoration: none;
+
 }
