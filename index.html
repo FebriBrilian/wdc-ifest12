@@ -17,10 +17,19 @@
         }
         .btnNext {
           margin-right: -85px;
+          margin-top: -60px;
         }
         .btnPrev {
           margin-left: -85px;
+          margin-top: -60px;
         }
+        .btnNext1 {
+          margin-right: -52px;
+        }
+        .btnPrev1 {
+          margin-left: -52px;
+        }
+
         .image-container {
           position: relative;
         }
@@ -29,14 +38,40 @@
           object-fit: cover;
         }
 
+        .img-footer {
+          margin-top: 0px;
+          margin-left: -80px;
+        }
+        .img1-footer {
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+        .row-footer {
+          margin-top: -160px;
+          margin-left: -165px;
+        }
+
         .caption {
-          position: absolute;
+          position: relative;
+          background-image: url(assets/img/bgDestinasi.jpg); 
+          background-repeat: no-repeat;
           top: 75%;
-          left: 30%;
+          left: 45%; 
+          width: 80%;
           transform: translate(-50%, -50%);
           opacity: 0;
           visibility: hidden;
           transition: all 0.3s ease-in-out;
+          background-size: cover;
+        }
+        .captionTxtH3{
+          margin-left: 15px;
+          padding-top: 10px;
+        }
+        .captionTxtP{
+          margin-left: 15px;
+          margin-top: -12px;
+          padding-bottom: 10px;
         }
         .captionArtikel {
           position: absolute;
@@ -66,6 +101,17 @@
           transform: translateY(0);
         }
 
+        .colHome1 {
+          margin-bottom: 40px;
+        }
+
+        .colHome2 {
+          margin-top: 0px;
+        }
+        .colHome3 {
+          margin-top: 40px;
+        }
+
         .colArtikel1 {
           margin-top: 40px;
         }
@@ -93,8 +139,16 @@
           display: none;
         }
 
+        .card-bodyArtikel1 {
+          padding: 6px;
+        }
+
         .cardArtikel:hover .card-bodyArtikel {
           display: block;
+        }
+
+        .cardArtikel:hover .card-bodyArtikel1 {
+          display: none;
         }
 
         .paragrafArtikel1 {
@@ -103,6 +157,61 @@
 
         .paragrafArtikel2 {
           margin-right: 10px;
+        }
+
+        .form-area {
+          padding-top: 0%;
+        }
+        .row.single-form {
+          box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+        }
+        .left {
+          padding: 165px 98px;
+          background-image: url(assets/img/bgForm.jpg);
+        }
+        .left h2 {
+          font-family: poppins;
+          color: #fff;
+          font-weight: 700;
+          font-size: 48px;
+        }
+        .left h2 span {
+          font-weight: 100;
+        }
+        .single-form{
+            background: #fff;
+        }
+        .right {
+          padding: 70px 100px;
+          position: relative;
+        }
+        .right i {
+          position: absolute;
+          font-size: 80px;
+          left: -27px;
+          top: 40%;
+          color: #fff;
+        }
+        .form-control {
+          border: 2px solid #000;
+        }
+        .right button {
+          border: none;
+          border-radius: 0;
+          background: #252525;
+          width: 180px;
+          color: #fff;
+          padding: 15px 0;
+          display: inline-block;
+          font-size: 16px;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+        .right button:hover{
+            background-color: #252525;
+        }
+        .btnIndikator {
+          margin-top: 50px;
         }
         @media screen and (max-width: 768px) {
             nav {
@@ -118,29 +227,89 @@
               justify-content: center;
               text-align: center;
             }
-            .judulDestinasi {
-          margin-left: 10px;
-        }
-            .btnNext {
-          margin-right: 0;
-        }
-        .btnPrev {
-          margin-left: 0;
-        }
-        .colArtikel1 {
-          margin-bottom: 20px;
+           .judulDestinasi {
+              margin-left: 10px;
+            }
+                .btnNext {
+              margin-right: 0;
+            }
+            .btnPrev {
+              margin-left: 0;
+            }
+            .btnNext1 {
+              margin-right: 0;
+            }
+            .btnPrev1 {
+              margin-left: 0;
+            }
+            .colArtikel1 {
+              margin-bottom: 20px;
+            }
+            .colArtikel2 {
+              margin-bottom: 20px;
+            }
+            .colArtikel3 {
+              margin-bottom: 20px;
+            }
+            .colHome1 {
+              margin-bottom: 20px;
+            }
+            .colHome2 {
+              margin-bottom: 20px;
+            }
+            .colHome3 {
+              margin-bottom: 20px;
+            }
+            .container2{
+              margin-top: -40px;
+            }
+            .img-footer{
+              display: none;
+            }
+            .img1-footer{
+              display: none;
+            }
+            .row-footer {
+              margin-top: 0;
+              margin-left: 0;
+            }
+          .left {
+              padding: 90px 15px;
+              text-align: center;
+            }
+          .left h2 {
+            font-size: 25px;
+          }
+          .right {
+            padding: 25px;
+          }
+          .right i {
+            top: -52px;
+            transform: rotate(90deg);
+            left: 46%;
+          }
+              .right button {
+            width: 150px;
+            padding: 12px 0;
+          }
         }
 
-        .colArtikel2 {
-          margin-bottom: 20px;
+        /*responsive form*/
+
+        @media (min-width:768px) and (max-width:991px){
+            .right i {
+              top: -52px;
+              transform: rotate(90deg);
+              left: 50%;
+            }
+            .img-footer {
+              display: none;
+            }
+            .img1-footer {
+              display: none;
+            }
         }
-        .colArtikel3 {
-          margin-bottom: 20px;
-        }
-        .container2{
-          margin-top: -40px;
-        }
-        }
+
     </style>
 </head>
   <body>
@@ -187,7 +356,7 @@
             <h1 class="judulHome mb-4 text-center justify-content-center">ADA APA SAJA DI JAWA TIMUR ?</h1>
             <div class="container text-center">
                 <div class="row">
-                  <div class="col align-self-start">
+                  <div class="colHome1 col align-self-start">
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -196,7 +365,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="col align-self-center mt-2.5">
+                  <div class="colHome2 col align-self-center">
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -205,7 +374,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="col align-self-end mt-5">
+                  <div class="colHome3 col align-self-end">
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -218,7 +387,7 @@
               </div>
               <div class="container text-center">
                 <div class="row">
-                  <div class="col align-self-start">
+                  <div class="colHome1 col align-self-start">
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -227,7 +396,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="col align-self-center mt-2.5">
+                  <div class="colHome2 col align-self-center">
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -236,7 +405,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="col align-self-end mt-5">
+                  <div class="colHome3 col align-self-end">
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -259,9 +428,9 @@
                   <div class="col-md-4 mt-3">
                     <div class="image-container">
                     <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
-                    <div class="caption text-start">
-                      <h3 class="bg-info text-white"> Judul Gambar1 </h3>
-                      <p class="bg-white text-black mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <div class="caption text-start shadow rounded">
+                      <h3 class="captionTxtH3 text-dark"> Judul Gambar1 </h3>
+                      <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                       </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -278,9 +447,9 @@
                   <div class="col-md-4 mt-3">
                     <div class="image-container">
                       <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
-                      <div class="caption text-start">
-                        <h3 class="bg-info text-white"> Judul Gambar2 </h3>
-                        <p class="bg-white text-black mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <div class="caption text-start shadow rounded">
+                        <h3 class="captionTxtH3 text-dark"> Judul Gambar2 </h3>
+                        <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                         </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -297,9 +466,9 @@
                   <div class=" col-md-4 mt-3">
                     <div class="image-container">
                       <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
-                      <div class="caption text-start">
-                        <h3 class="bg-info text-white"> Judul Gambar3 </h3>
-                        <p class="bg-white text-black mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <div class="caption text-start shadow rounded">
+                        <h3 class="captionTxtH3 text-dark"> Judul Gambar3 </h3>
+                        <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                         </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -320,68 +489,68 @@
                   <div class="col-md-4 mt-3">
                     <div class="image-container">
                       <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
-                      <div class="caption text-start">
-                        <h3 class="bg-info text-white"> Judul Gambar4 </h3>
-                      <p class="bg-white text-black mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-                      </svg></p>
+                      <div class="caption text-start shadow rounded">
+                        <h3 class="captionTxtH3 text-dark"> Judul Gambar4 </h3>
+                        <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                          <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                        </svg></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-4 mt-3 ">
                     <div class="image-container">
                       <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
-                      <div class="caption text-start">
-                        <h3 class="bg-info text-white"> Judul Gambar5 </h3>
-                      <p class="bg-white text-black mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-                      </svg></p>
+                      <div class="caption text-start shadow rounded">
+                        <h3 class="captionTxtH3 text-dark"> Judul Gambar5 </h3>
+                        <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                          <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                        </svg></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-4 mt-3">
                     <div class="image-container">
                       <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
-                      <div class="caption text-start">
-                        <h3 class="bg-info text-white"> Judul Gambar6 </h3>
-                      <p class="bg-white text-black mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-                      </svg></p>
+                      <div class="caption text-start shadow rounded">
+                        <h3 class="captionTxtH3 text-dark"> Judul Gambar6 </h3>
+                        <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                          <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                        </svg></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <button class=" btnPrev carousel-control-prev mt-3" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+            <button class="btnPrev carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
               <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class=" btnNext carousel-control-next mt-3" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+            <button class="btnNext carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
               <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -397,10 +566,13 @@
           <div class="card text-start border-0" style="width: 18rem;">
             <div class="cardArtikel">
             <img src="assets/img/bgHome.jpg" class="imgArtikel card-img-top" alt="...">
+            <div class="card-bodyArtikel1">
+              <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+            </div>
             <div class="card-bodyArtikel">
-              <h3 class="paragrafArtikel1">Judul</h3>
+              <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
               <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+              <p class="paragrafArtikel2 text-end">21/02/2024</p>
             </div>
             </div>
             </div>
@@ -409,10 +581,13 @@
           <div class="card text-start border-0" style="width: 18rem;">
             <div class="cardArtikel">
               <img src="assets/img/bgHome.jpg" class="imgArtikel card-img-top" alt="...">
+              <div class="card-bodyArtikel1">
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+              </div>
               <div class="card-bodyArtikel">
-                 <h3 class="paragrafArtikel1">Judul</h3>
-              <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+                <p class="paragrafArtikel1">Deskripsi</p>
+                <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -421,10 +596,13 @@
           <div class="card text-start border-0" style="width: 18rem;">
             <div class="cardArtikel">
               <img src="assets/img/bgHome.jpg" class="imgArtikel card-img-top" alt="...">
+              <div class="card-bodyArtikel1">
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+              </div>
               <div class="card-bodyArtikel">
-                 <h3 class="paragrafArtikel1">Judul</h3>
-              <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+                <p class="paragrafArtikel1">Deskripsi</p>
+                <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -437,10 +615,13 @@
           <div class="card text-start border-0" style="width: 18rem;">
             <div class="cardArtikel">
               <img src="assets/img/bgHome.jpg" class="imgArtikel card-img-top" alt="...">
+              <div class="card-bodyArtikel1">
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+              </div>
               <div class="card-bodyArtikel">
-                 <h3 class="paragrafArtikel1">Judul</h3>
-              <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+                <p class="paragrafArtikel1">Deskripsi</p>
+                <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -449,10 +630,13 @@
           <div class="card text-start border-0" style="width: 18rem;">
             <div class="cardArtikel">
               <img src="assets/img/bgHome.jpg" class="imgArtikel card-img-top" alt="...">
+              <div class="card-bodyArtikel1">
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+              </div>
               <div class="card-bodyArtikel">
-                 <h3 class="paragrafArtikel1">Judul</h3>
-              <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+                <p class="paragrafArtikel1">Deskripsi</p>
+                <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -461,10 +645,13 @@
           <div class="card text-start border-0" style="width: 18rem;">
             <div class="cardArtikel">
               <img src="assets/img/bgHome.jpg" class="imgArtikel card-img-top" alt="...">
+              <div class="card-bodyArtikel1">
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+              </div>
               <div class="card-bodyArtikel">
-                 <h3 class="paragrafArtikel1">Judul</h3>
-              <p class="paragrafArtikel1">Deskripsi</p>
-              <p class="paragrafArtikel2 text-end">Rp. 100.000</p>
+                <h5 class="paragrafArtikel1"><b>Bakso Tanpa Tepung</b></h5>
+                <p class="paragrafArtikel1">Deskripsi</p>
+                <p class="paragrafArtikel2 text-end">21/02/2024</p>
               </div>
               </div>
             </div>
@@ -473,6 +660,96 @@
     </div>
     <h6 class="judulHome mb-4 text-xl-center justify-content-center mt-5">Lihat Selengkapnya ...</h6>
   </div>  
+   <!--Riview User-->
+   <div class="form-area bg-light pb-5 pt-5">
+    <div class="container">
+      <h1 class="judulDestinasi mb-5 justify-content-center"><b> | </b>Write a Review</h1>
+        <div class="row single-form g-0">
+            <div class="col-sm-12 col-lg-6">
+                <div class="left">
+                  <div id="carouselIndicators" class="carousel slide">
+                    <div class="btnIndikator carousel-indicators bg-dark bg-opacity-75 rounded">
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/img/samplekomen.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/samplekomen.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/samplekomen.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="btnPrev1 carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btnNext1 carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="right">
+                   <i class="fa fa-caret-left"></i>
+                    <form>
+                      <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputPassword1" class="form-label">Message</label>
+                          <textarea type="password" class="form-control" id="InputPassword1"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <!--Footer--> 
+   <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <img src="assets/img/goti.png" alt="GOTI" height="150" class="img-footer " />
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning text-start">Support by</h5>
+          <p class="text-start"><img src="assets/img/Unikama.png" alt="UNIKAMA" height="100" class="img-footer1 " /><b>UNIKAMA</b></p>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning text-start">Contact US</h5>
+          <p class="text-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+          </svg>  goti@gmail.com</p>
+          <p class="text-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg> +123-456-7890</p>
+          <p class="text-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>  goti.id</p>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <img src="assets/img/userIMG.png" alt="NIN2024" height="150" class="img1-footer" />
+        </div>
+      </div>
+      <hr color="white" />
+      <h6 class="text-center text-white">Copyright Ⓒ 2024 NIN</h6>
+    </div>
+   </footer>
   <!--Script-->
     <script type="text/javascript">
         var nav = document.querySelector('nav');
