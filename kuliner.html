@@ -13,7 +13,12 @@
             background-image: url(assets/img/bgHome.jpg);  
             background-repeat: no-repeat;  
         }
-        /* Artikel */    
+        /* Artikel */ 
+        .img-Konten {
+          position: absolute;
+          z-index: -9999;
+          margin-top: -100px;
+        }   
         .imgArtikel {
           max-width: 100%;
           height: auto;
@@ -106,8 +111,17 @@
               text-align: center;
             }
             /* Artikel */
+            .img-Konten {
+              position: absolute;
+              z-index: -9999;
+              background-repeat: no-repeat; 
+              height: 400%;
+              margin-top: 20px;
+            }
             .judulDestinasi {
               font-size: 34px;
+              font-style: italic;
+              font-weight: bold;
             }
             .colArtikel1 {
               margin-bottom: 20px;
@@ -131,6 +145,17 @@
             .row-footer {
               margin-top: 0;
               margin-left: 0;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:991px){
+            /* Artikel */
+            .img-Konten {
+              position: absolute;
+              z-index: -9999;
+              background-repeat: no-repeat;
+              margin-top: 10px;
+              height: 350%;
             }
         }
 
@@ -176,8 +201,9 @@
             </div>
         </div>
     <!--Artikel--> 
+  <img src="assets/img/bgKonten1.png" class="img-Konten d-block w-100" alt="..." />
   <div class="container mt-3 my-3 mb-5">
-    <h1 class="judulDestinasi mb-5 mt-5 text-center">MAKANAN POPULER JAWA TIMUR </h1>
+    <h1 class="judulDestinasi mb-5 mt-5 text-center">MAKANAN POPULER JAWA TIMUR</h1>
     <div class="container text-center">
       <div class="row">
         <div class=" colArtikel1 col align-self-start">
