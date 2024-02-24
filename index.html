@@ -8,14 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
+      /* bg Utama */
         .banner-image {
             background-image: url(assets/img/bgHome.jpg);  
             background-repeat: no-repeat;  
         }
+      /* Home */  
         .textHome {
             animation: fadeInUp;
             animation-duration: 3s;
         }
+
+        .colHome1 {
+          margin-bottom: 40px;
+        }
+
+        .colHome2 {
+          margin-top: 0px;
+        }
+        .colHome3 {
+          margin-top: 40px;
+        }
+      /* Destinasi */  
         .judulDestinasi {
           margin-left: 35px;
         }
@@ -31,12 +45,6 @@
           margin-left: -85px;
           margin-top: -60px;
         }
-        .btnNext1 {
-          margin-right: -52px;
-        }
-        .btnPrev1 {
-          margin-left: -52px;
-        }
 
         .image-container {
           position: relative;
@@ -45,23 +53,7 @@
         .image-container img {
           object-fit: cover;
         }
-
-        .img-footer {
-          margin-top: 0px;
-          margin-left: -80px;
-        }
-        .img1-footer {
-          margin-top: 0px;
-          margin-left: 0px;
-        }
-        .row-footer {
-          margin-top: -160px;
-          margin-left: -165px;
-        }
-        .text-footer {
-          font-size: x-small;
-        }
-
+        
         .caption {
           position: relative;
           background-image: url(assets/img/bgDestinasi.jpg); 
@@ -102,6 +94,7 @@
           visibility: visible;
         }
 
+      /* Artikel */    
         .imgArtikel {
           max-width: 100%;
           height: auto;
@@ -110,17 +103,6 @@
         .imgArtikel:hover .caption {
           opacity: 1;
           transform: translateY(0);
-        }
-
-        .colHome1 {
-          margin-bottom: 40px;
-        }
-
-        .colHome2 {
-          margin-top: 0px;
-        }
-        .colHome3 {
-          margin-top: 40px;
         }
 
         .colArtikel1 {
@@ -169,12 +151,18 @@
         .paragrafArtikel2 {
           margin-right: 10px;
         }
-
+      /* form */  
         .form-area {
           padding-top: 0%;
         }
         .row.single-form {
           box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+        }
+        .btnNext1 {
+          margin-right: -52px;
+        }
+        .btnPrev1 {
+          margin-left: -52px;
         }
         .left {
           padding: 165px 98px;
@@ -224,43 +212,38 @@
         .btnIndikator {
           margin-top: 50px;
         }
+        /* footer */   
+        .img-footer {
+          margin-top: 0px;
+          margin-left: -80px;
+        }
+        .img1-footer {
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+        .row-footer {
+          margin-top: -160px;
+          margin-left: -165px;
+        }
+        .text-footer {
+          font-size: x-small;
+        }
         @media screen and (max-width: 768px) {
-            nav {
+          /* navbar */
+          nav {
                 background-color: rgb(33, 37, 41);
             }
+            /* bg Utama */
             .banner-image {
                 background-image: url(assets/img/bgHomeMobile2.jpg);
                 background-position: center;
                 background-repeat: no-repeat; 
                 height: 100vh;
             }
+            /* Home */
             .judulHome {
               justify-content: center;
               text-align: center;
-            }
-           .judulDestinasi {
-              margin-left: 10px;
-            }
-                .btnNext {
-              margin-right: 0;
-            }
-            .btnPrev {
-              margin-left: 0;
-            }
-            .btnNext1 {
-              margin-right: 0;
-            }
-            .btnPrev1 {
-              margin-left: 0;
-            }
-            .colArtikel1 {
-              margin-bottom: 20px;
-            }
-            .colArtikel2 {
-              margin-bottom: 20px;
-            }
-            .colArtikel3 {
-              margin-bottom: 20px;
             }
             .colHome1 {
               margin-bottom: 20px;
@@ -271,9 +254,30 @@
             .colHome3 {
               margin-bottom: 20px;
             }
+             /* Destinasi */
+           .judulDestinasi {
+              margin-left: 10px;
+            }
+                .btnNext {
+              margin-right: 0;
+            }
+            .btnPrev {
+              margin-left: 0;
+            }
+             /* Artikel */
+            .colArtikel1 {
+              margin-bottom: 20px;
+            }
+            .colArtikel2 {
+              margin-bottom: 20px;
+            }
+            .colArtikel3 {
+              margin-bottom: 20px;
+            }
             .container2{
               margin-top: -40px;
             }
+             /* Footer */
             .img-footer{
               display: none;
             }
@@ -282,6 +286,13 @@
             }
             .row-footer {
               margin-top: 0;
+              margin-left: 0;
+            }
+             /* Form */
+          .btnNext1 {
+              margin-right: 0;
+            }
+          .btnPrev1 {
               margin-left: 0;
             }
           .left {
@@ -305,7 +316,7 @@
           }
         }
 
-        /*responsive form*/
+        /*responsive form min-width:768px and max-width:991px*/
 
         @media (min-width:768px) and (max-width:991px){
             .right i {
