@@ -6,15 +6,37 @@
     <title>GOTI</title>
     <link rel="shortcut icon" href="assets/img/logogoti.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
+      /* bg Utama */
         .banner-image {
             background-image: url(assets/img/bgHome.jpg);  
             background-repeat: no-repeat;  
         }
+      /* Home */  
+        .textHome {
+            animation: fadeInUp;
+            animation-duration: 3s;
+        }
+
+        .colHome1 {
+          margin-bottom: 40px;
+        }
+
+        .colHome2 {
+          margin-top: 0px;
+        }
+        .colHome3 {
+          margin-top: 40px;
+        }
+      /* Destinasi */  
         .judulDestinasi {
           margin-left: 35px;
         }
+        .img-destinasi {
+          border-radius: 10px;
+        }
+
         .btnNext {
           margin-right: -85px;
           margin-top: -60px;
@@ -22,12 +44,6 @@
         .btnPrev {
           margin-left: -85px;
           margin-top: -60px;
-        }
-        .btnNext1 {
-          margin-right: -52px;
-        }
-        .btnPrev1 {
-          margin-left: -52px;
         }
 
         .image-container {
@@ -37,20 +53,7 @@
         .image-container img {
           object-fit: cover;
         }
-
-        .img-footer {
-          margin-top: 0px;
-          margin-left: -80px;
-        }
-        .img1-footer {
-          margin-top: 0px;
-          margin-left: 0px;
-        }
-        .row-footer {
-          margin-top: -160px;
-          margin-left: -165px;
-        }
-
+        
         .caption {
           position: relative;
           background-image: url(assets/img/bgDestinasi.jpg); 
@@ -91,6 +94,7 @@
           visibility: visible;
         }
 
+      /* Artikel */    
         .imgArtikel {
           max-width: 100%;
           height: auto;
@@ -99,17 +103,6 @@
         .imgArtikel:hover .caption {
           opacity: 1;
           transform: translateY(0);
-        }
-
-        .colHome1 {
-          margin-bottom: 40px;
-        }
-
-        .colHome2 {
-          margin-top: 0px;
-        }
-        .colHome3 {
-          margin-top: 40px;
         }
 
         .colArtikel1 {
@@ -158,12 +151,18 @@
         .paragrafArtikel2 {
           margin-right: 10px;
         }
-
+      /* form */  
         .form-area {
           padding-top: 0%;
         }
         .row.single-form {
           box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+        }
+        .btnNext1 {
+          margin-right: -52px;
+        }
+        .btnPrev1 {
+          margin-left: -52px;
         }
         .left {
           padding: 165px 98px;
@@ -213,43 +212,38 @@
         .btnIndikator {
           margin-top: 50px;
         }
+        /* footer */   
+        .img-footer {
+          margin-top: 0px;
+          margin-left: -80px;
+        }
+        .img1-footer {
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+        .row-footer {
+          margin-top: -160px;
+          margin-left: -165px;
+        }
+        .text-footer {
+          font-size: x-small;
+        }
         @media screen and (max-width: 768px) {
-            nav {
+          /* navbar */
+          nav {
                 background-color: rgb(33, 37, 41);
             }
+            /* bg Utama */
             .banner-image {
                 background-image: url(assets/img/bgHomeMobile2.jpg);
                 background-position: center;
                 background-repeat: no-repeat; 
                 height: 100vh;
             }
+            /* Home */
             .judulHome {
               justify-content: center;
               text-align: center;
-            }
-           .judulDestinasi {
-              margin-left: 10px;
-            }
-                .btnNext {
-              margin-right: 0;
-            }
-            .btnPrev {
-              margin-left: 0;
-            }
-            .btnNext1 {
-              margin-right: 0;
-            }
-            .btnPrev1 {
-              margin-left: 0;
-            }
-            .colArtikel1 {
-              margin-bottom: 20px;
-            }
-            .colArtikel2 {
-              margin-bottom: 20px;
-            }
-            .colArtikel3 {
-              margin-bottom: 20px;
             }
             .colHome1 {
               margin-bottom: 20px;
@@ -260,9 +254,30 @@
             .colHome3 {
               margin-bottom: 20px;
             }
+             /* Destinasi */
+           .judulDestinasi {
+              margin-left: 10px;
+            }
+                .btnNext {
+              margin-right: 0;
+            }
+            .btnPrev {
+              margin-left: 0;
+            }
+             /* Artikel */
+            .colArtikel1 {
+              margin-bottom: 20px;
+            }
+            .colArtikel2 {
+              margin-bottom: 20px;
+            }
+            .colArtikel3 {
+              margin-bottom: 20px;
+            }
             .container2{
               margin-top: -40px;
             }
+             /* Footer */
             .img-footer{
               display: none;
             }
@@ -271,6 +286,13 @@
             }
             .row-footer {
               margin-top: 0;
+              margin-left: 0;
+            }
+             /* Form */
+          .btnNext1 {
+              margin-right: 0;
+            }
+          .btnPrev1 {
               margin-left: 0;
             }
           .left {
@@ -294,7 +316,7 @@
           }
         }
 
-        /*responsive form*/
+        /*responsive form min-width:768px and max-width:991px*/
 
         @media (min-width:768px) and (max-width:991px){
             .right i {
@@ -360,8 +382,8 @@
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3>Judul</h3>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h3 class="textHome card-text">Judul</h3>
+                          <p class="textHome card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
                   </div>
@@ -369,8 +391,8 @@
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3>Judul</h3>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing.                          </p>
+                            <h3 class="textHome card-text">Judul</h3>
+                          <p class="textHome card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing.                          </p>
                         </div>
                       </div>
                   </div>
@@ -378,8 +400,8 @@
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3>Judul</h3>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, neque.</p>
+                            <h3 class="textHome card-text">Judul</h3>
+                          <p class="textHome card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, neque.</p>
                         </div>
                       </div>
                   </div>
@@ -391,8 +413,8 @@
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3>Judul</h3>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h3 class="textHome card-text">Judul</h3>
+                          <p class="textHome card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
                   </div>
@@ -400,8 +422,8 @@
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3>Judul</h3>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing.                          </p>
+                            <h3 class="textHome card-text">Judul</h3>
+                            <p class="textHome card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing.                          </p>
                         </div>
                       </div>
                   </div>
@@ -409,8 +431,8 @@
                     <div class="card text-start border-0" style="width: 18rem;">
                         <img src="assets/img/bgHome.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3>Judul</h3>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, neque.</p>
+                            <h3 class="textHome card-text">Judul</h3>
+                          <p class="textHome card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, neque.</p>
                         </div>
                       </div>
                   </div>
@@ -427,7 +449,7 @@
                 <div class="row">
                   <div class="col-md-4 mt-3">
                     <div class="image-container">
-                    <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/bgHome.jpg" class="img-destinasi d-block w-100" alt="...">
                     <div class="caption text-start shadow rounded">
                       <h3 class="captionTxtH3 text-dark"> Judul Gambar1 </h3>
                       <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -446,7 +468,7 @@
                   </div>
                   <div class="col-md-4 mt-3">
                     <div class="image-container">
-                      <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
+                      <img src="assets/img/bgHome.jpg" class="img-destinasi d-block w-100" alt="...">
                       <div class="caption text-start shadow rounded">
                         <h3 class="captionTxtH3 text-dark"> Judul Gambar2 </h3>
                         <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -465,7 +487,7 @@
                   </div>
                   <div class=" col-md-4 mt-3">
                     <div class="image-container">
-                      <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
+                      <img src="assets/img/bgHome.jpg" class="img-destinasi d-block w-100" alt="...">
                       <div class="caption text-start shadow rounded">
                         <h3 class="captionTxtH3 text-dark"> Judul Gambar3 </h3>
                         <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -488,7 +510,7 @@
                 <div class="row">
                   <div class="col-md-4 mt-3">
                     <div class="image-container">
-                      <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
+                      <img src="assets/img/bgHome.jpg" class="img-destinasi d-block w-100" alt="...">
                       <div class="caption text-start shadow rounded">
                         <h3 class="captionTxtH3 text-dark"> Judul Gambar4 </h3>
                         <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -507,7 +529,7 @@
                   </div>
                   <div class="col-md-4 mt-3 ">
                     <div class="image-container">
-                      <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
+                      <img src="assets/img/bgHome.jpg" class="img-destinasi d-block w-100" alt="...">
                       <div class="caption text-start shadow rounded">
                         <h3 class="captionTxtH3 text-dark"> Judul Gambar5 </h3>
                         <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -526,7 +548,7 @@
                   </div>
                   <div class="col-md-4 mt-3">
                     <div class="image-container">
-                      <img src="assets/img/bgHome.jpg" class="d-block w-100" alt="...">
+                      <img src="assets/img/bgHome.jpg" class="img-destinasi d-block w-100" alt="...">
                       <div class="caption text-start shadow rounded">
                         <h3 class="captionTxtH3 text-dark"> Judul Gambar6 </h3>
                         <p class="captionTxtP text-warning mb-1">  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -700,8 +722,8 @@
                    <i class="fa fa-caret-left"></i>
                     <form>
                       <div class="mb-3">
-                        <label for="InputEmail1" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                        <label for="InputName1" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="InputName1" aria-describedby="textHelp">
                       </div>
                       <div class="mb-3">
                         <label for="InputEmail1" class="form-label">Email address</label>
@@ -711,7 +733,7 @@
                         <label for="InputPassword1" class="form-label">Message</label>
                           <textarea type="password" class="form-control" id="InputPassword1"></textarea>
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-primary rounded-pill shadow">Submit</button>
                     </form>
                 </div>
             </div>
@@ -747,7 +769,7 @@
         </div>
       </div>
       <hr color="white" />
-      <h6 class="text-center text-white">Copyright Ⓒ 2024 NIN</h6>
+      <p class="text-footer text-center text-white">Ⓒ Copyright by NIN 2024</p>
     </div>
    </footer>
   <!--Script-->
