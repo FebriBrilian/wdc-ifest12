@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-gradient {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    margin-left: -5%;
+    margin-right: -5%;
+    /* padding-top: 1%;
+    margin-bottom: -2%; */
+}
+
+/* Article Styles */
+.container .article {
+    margin-top: 100px;
+    position: relative;
+}
+
+.container .article .row-8 {
+    overflow: hidden;
+}
+
+.container .article .img-card img {
+    height: 400px;
+    width: 720px;
+}
+
+.container .article .details .text-warning {
+    margin-top: -10px;
+}
+
+.container .article .other-article .img-card {
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.container .article .other-article .img-card img {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    opacity: 1;
+}
+
+.container .article .other-article .img-card .details {
+    width: 100%;
+    position: relative;
+    visibility: hidden;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/bgDestinasi.jpg');
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.container .article .other-article .img-card:hover img {
+    filter: blur(2px);
+}
+
+.container .article .other-article .img-card:hover .details {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Kuliner */
+.container .article .other-article .kuliner .img-card {
+    width: 350px;
+    position: relative;
+    height: 350px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.container .article .other-article .kuliner .img-card img {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    opacity: 1;
+}
+
+.container .article .other-article .kuliner .img-card:hover img {
+    filter: none;
+}
+
+.container .article .other-article .kuliner .img-card .details {
+    width: 80%;
+    left: 10%;
+    position: relative;
+    visibility: hidden;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/bgDestinasi.jpg');
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+.container .article .other-article .kuliner .img-card:hover .details {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Footer */
+.img-footer {
+    margin-top: 0px;
+    margin-left: -80px;
+}
+
+.img1-footer {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.row-footer {
+    margin-top: -160px;
+    margin-left: -165px;
+}
+
+.text-footer {
+    font-size: x-small;
+}
+
+/* Responsive */
+@media screen and (max-width:1024px) {
+    .bg-image {
+        background-image: url('../assets/img/destination/bg.png');
+        background-repeat: no-repeat;
+        background-size: 1024px;
+        /* height: 630px; */
+        /* align-items: center; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        background-color: #212529;
+        /* z-index: 99; */
+    }
+
+}
