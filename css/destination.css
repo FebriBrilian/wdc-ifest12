@@ -47,6 +47,7 @@
     position: absolute;
     margin-top: -15px;
     min-width: 100%;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 .destination {
@@ -115,6 +116,7 @@
     position: absolute;
     margin-top: -8%;
     min-width: 100%;
+    filter: drop-shadow(-3px -5px 2px rgb(0 0 0 / 0.4));
 }
 .article {
     background-color:#e0fbfc;
