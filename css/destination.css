@@ -1,7 +1,12 @@
 
-.navbar-brand1 {
+* {
+    padding: 0;
+    margin: 0;
+  }
+  /* Navbar */
+  .navbar-brand1 {
     visibility: hidden;
-}
+  }
 
 /* Jumbotron */
 .bg-jumbotron {
@@ -42,6 +47,9 @@
 }
 
 /* Destination Styles */
+.judulDestinasi {
+    margin-left: 35px;
+  }
 .bg-destination {
     z-index: -1;
     position: absolute;
@@ -108,6 +116,9 @@
     margin-right: 10px;
     flex-direction: row;
     justify-content: end;
+}
+.imgDestinasi {
+    object-fit: cover;
 }
 
 /* Article Style */
@@ -189,28 +200,25 @@
     background-image: linear-gradient(#e0fbfc, #98c1d9);
 }
 
-/* Footer */
+/* footer */   
 .img-footer {
     margin-top: 0px;
     margin-left: -80px;
-}
-
-.img1-footer {
-    margin-top: 0px;
-    margin-left: 0px;
-}
-
-.row-footer {
-    margin-top: -160px;
-    margin-left: -165px;
-}
-
-.text-footer {
-    font-size: x-small;
-}
+   }
+   .img1-footer {
+     margin-top: 0px;
+     margin-left: 0px;
+   }
+   .row-footer {
+     margin-top: -160px;
+     margin-left: -165px;
+   }
+   .text-footer {
+     font-size: x-small;
+   }
 
 /* Responsive */
-@media screen and (max-width:1024px) {
+@media (min-width:768px) and (max-width:991px) {
     .jumbotron {
         /* background-image: url('../assets/img/destination/bg.png'); */
         background-repeat: no-repeat;
@@ -218,29 +226,55 @@
         /* height: 630px; */
         /* align-items: center; */
     }
+    /* navbar */
+    nav {
+        background-color: rgb(33, 37, 41);
+      }
+
+      .navbar-brand1 {
+        visibility: visible;
+      }
+
+      .navbar-brand {
+        visibility: hidden;
+        display: none;
+      }
+    /* Footer */
+      .img-footer{
+        display: none;
+      }
+      .img1-footer{
+        display: none;
+      }
+      .row-footer {
+        margin-top: 0;
+        margin-left: 0;
+      }
 }
 
 @media screen and (max-width: 768px) {
+    /* navbar */
     nav {
-        background-color: #212529;
-        /* z-index: 99; */
-    }
+        background-color: rgb(33, 37, 41);
+      }
 
-    .navbar-brand1 {
+      .navbar-brand1 {
         visibility: visible;
-    }
+      }
 
+      .navbar-brand {
+        visibility: hidden;
+        display: none;
+      }
     /* Footer */
-    .img-footer {
+      .img-footer{
         display: none;
-    }
-
-    .img1-footer {
+      }
+      .img1-footer{
         display: none;
-    }
-
-    .row-footer {
+      }
+      .row-footer {
         margin-top: 0;
         margin-left: 0;
-    }
+      }
 }
