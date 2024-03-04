@@ -12,6 +12,11 @@
         padding: 0;
         margin: 0;
       }
+      /* Navbar */
+      .navbar-brand1 {
+        visibility: hidden;
+      }
+    
       /* bg Utama */
       .banner-image {
         background-repeat: no-repeat;
@@ -302,8 +307,17 @@
         }
         @media screen and (max-width: 768px) {
           /* navbar */
-          nav {
-                background-color: rgb(33, 37, 41);
+            nav {
+              background-color: rgb(33, 37, 41);
+            }
+
+            .navbar-brand1 {
+              visibility: visible;
+            }
+
+            .navbar-brand {
+              visibility: hidden;
+              display: none;
             }
             /* bg Utama */
             .banner-image {
@@ -436,6 +450,18 @@
         /*responsive form min-width:768px and max-width:991px*/
 
         @media (min-width:768px) and (max-width:991px){
+            nav {
+              background-color: rgb(33, 37, 41);
+            }
+
+            .navbar-brand1 {
+              visibility: visible;
+            }
+
+            .navbar-brand {
+              visibility: hidden;
+              display: none;
+            }
             .right i {
               top: -52px;
               transform: rotate(90deg);
@@ -505,21 +531,6 @@
               width: 200px;
             } 
         }
-
-      /* navbar */
-      nav {
-        background-color: rgb(33, 37, 41);
-      }
-
-      .navbar-brand1 {
-        visibility: visible;
-      }
-
-      .navbar-brand {
-        visibility: hidden;
-        display: none;
-      }
-    
   </style>
 
 </head>
@@ -527,7 +538,7 @@
   <!--Navbar-->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
     <div class="container">
-      <a href="#" class="navbar-brand1"><img src="assets/img/goti.png" alt="GOTI" height="35" /></a>
+      <a href="#" class="navbar-brand1"><img src="assets/img/goti.webp" alt="GOTI" height="35" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
           class="navbar-toggler-icon"></span></button>
@@ -542,10 +553,10 @@
               <a class="nav-link text-white" href="#">Kuliner</a>
             </li>
             <li class="nav-item ps-3 navbar-brand">
-              <a href="#" class=""><img src="assets/img/goti.png" alt="GOTI" height="35" /></a>
+              <a href="#" class=""><img src="assets/img/goti.webp" alt="GOTI" height="35" /></a>
             </li>
-              <a class="nav-link text-white" href="#">Artikel</a>
             <li class="nav-item p-1">
+              <a class="nav-link text-white" href="#">Artikel</a>
             </li>
             <li class="nav-item p-1">
               <a class="nav-link text-white" href="#">IN <svg class="pb-1" xmlns="http://www.w3.org/2000/svg" width="13"
@@ -771,7 +782,6 @@
             </div>
             </div>
             </div>
-         
         </div>
         <div class="colArtikel2 col align-self-center">
           <div class="card text-start border-0" style="width: 18rem;">
@@ -788,7 +798,6 @@
               </div>
             </div>
           </div>
-        </div>
         <div class="colArtikel3 col align-self-end">
           <div class="card text-start border-0" style="width: 18rem;">
             <div class="cardArtikel">
@@ -842,11 +851,28 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                
-                </div>
-                
+                </div>               
             </div>
-          
+            <div class="col-sm-12 col-lg-6">
+              <div class="right">
+                <i class="fa fa-caret-left"></i>
+                <form>
+                  <div class="mb-3">
+                    <label for="InputName1" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="InputName1" aria-describedby="textHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputPassword1" class="form-label">Message</label>
+                    <textarea type="password" class="form-control" id="InputPassword1"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary rounded-pill shadow">Submit</button>
+                </form>
+              </div>
+            </div>
         </div>
     </div>
     <svg id="wave" class="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 270" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(224, 251, 252, 1)" offset="0%"></stop><stop stop-color="rgba(248, 249, 250, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,81L40,85.5C80,90,160,99,240,103.5C320,108,400,108,480,121.5C560,135,640,162,720,171C800,180,880,171,960,153C1040,135,1120,108,1200,85.5C1280,63,1360,45,1440,36C1520,27,1600,27,1680,27C1760,27,1840,27,1920,36C2000,45,2080,63,2160,90C2240,117,2320,153,2400,166.5C2480,180,2560,171,2640,162C2720,153,2800,144,2880,130.5C2960,117,3040,99,3120,94.5C3200,90,3280,99,3360,126C3440,153,3520,198,3600,211.5C3680,225,3760,207,3840,175.5C3920,144,4000,99,4080,108C4160,117,4240,180,4320,211.5C4400,243,4480,243,4560,238.5C4640,234,4720,225,4800,184.5C4880,144,4960,72,5040,58.5C5120,45,5200,90,5280,126C5360,162,5440,189,5520,193.5C5600,198,5680,180,5720,171L5760,162L5760,270L5720,270C5680,270,5600,270,5520,270C5440,270,5360,270,5280,270C5200,270,5120,270,5040,270C4960,270,4880,270,4800,270C4720,270,4640,270,4560,270C4480,270,4400,270,4320,270C4240,270,4160,270,4080,270C4000,270,3920,270,3840,270C3760,270,3680,270,3600,270C3520,270,3440,270,3360,270C3280,270,3200,270,3120,270C3040,270,2960,270,2880,270C2800,270,2720,270,2640,270C2560,270,2480,270,2400,270C2320,270,2240,270,2160,270C2080,270,2000,270,1920,270C1840,270,1760,270,1680,270C1600,270,1520,270,1440,270C1360,270,1280,270,1200,270C1120,270,1040,270,960,270C880,270,800,270,720,270C640,270,560,270,480,270C400,270,320,270,240,270C160,270,80,270,40,270L0,270Z"></path></svg>
