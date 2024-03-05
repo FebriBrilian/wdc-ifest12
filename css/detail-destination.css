@@ -74,7 +74,7 @@
     /* z-index: -1; */
     position: absolute;
     /* top: 5%; */
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));    
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));   
 }
 .nal{
     z-index: -9999;
@@ -200,4 +200,18 @@
     .img1-footer {
         display: none;
     }
+}
+
+@media (min-width:2000px) and (max-width:4000px) {
+.bg-nal {
+    margin-bottom: 350px;
+    z-index: 0;
+    position: relative;
+}
+.destination {
+    z-index: 9999;
+}
+.nal {
+    margin-top: -1100px;
+}
 }
