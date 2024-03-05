@@ -3,9 +3,6 @@
     visibility: hidden;
 }
 /* Kuliner Styles */
-.textKuliner {
-    margin-left: 15px;
-}
 .bg-bot{
     position: absolute;
     /* top: 5%; */
@@ -124,82 +121,76 @@
     opacity: 1;
 }
 
-/* footer */   
+/* footer */
 .img-footer {
     margin-top: 0px;
     margin-left: -80px;
-   }
-   .img1-footer {
-     margin-top: 0px;
-     margin-left: 0px;
-   }
-   .row-footer {
-     margin-top: -160px;
-     margin-left: -165px;
-   }
-   .text-footer {
-     font-size: x-small;
-   }
+}
+
+.img1-footer {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.row-footer {
+    margin-top: -160px;
+    margin-left: -165px;
+}
+
+.text-footer {
+    font-size: x-small;
+}
 
 @media screen and (max-width: 768px) {
 
     /* navbar */
     nav {
         background-color: rgb(33, 37, 41);
-      }
+    }
 
-      .navbar-brand1 {
+    .navbar-brand1 {
         visibility: visible;
-      }
+    }
 
-      .navbar-brand {
+    .navbar-brand {
         visibility: hidden;
         display: none;
-      }
-/* Footer */
-      .img-footer{
+    }
+
+    /* Footer */
+    .img-footer {
         display: none;
-      }
-      .img1-footer{
+    }
+
+    .img1-footer {
         display: none;
-      }
-      .row-footer {
+    }
+
+    .row-footer {
         margin-top: 0;
         margin-left: 0;
-      }
+    }
 }
 
 @media (min-width:768px) and (max-width:991px) {
     nav {
         background-color: rgb(33, 37, 41);
-      }
+    }
 
-      .navbar-brand1 {
+    .navbar-brand1 {
         visibility: visible;
-      }
+    }
 
-      .navbar-brand {
+    .navbar-brand {
         visibility: hidden;
         display: none;
-      }
-  .img-footer {
-        display: none;
-      }
-      .img1-footer {
-        display: none;
-      }
-}
+    }
 
-@media (min-width:2000px) and (max-width:4000px) {
-    .bg-bot {
-        margin-bottom: 550px;
-        z-index: 0;
-        position: relative;
+    .img-footer {
+        display: none;
     }
-    .destination2 {
-        z-index: 9999;
+
+    .img1-footer {
+        display: none;
     }
-    .destination {
-        margin-top: -1100px;
-    }
-    }
+}
